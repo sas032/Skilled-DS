@@ -30,7 +30,7 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix 
 cm = confusion_matrix(y_test, y_pred) 
 
-pickle.dump(classifier, open('model.pkl','wb'))
-model=pickle.load(open('model.pkl','rb'))
+pickle.dump(classifier, open('model.pkl','wb'), protocol=2)
+#model=pickle.load(open('model.pkl','rb'))
 
 
