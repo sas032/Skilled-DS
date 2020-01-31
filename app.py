@@ -36,5 +36,5 @@ def predict_api():
     return jsonify(outputJson)
 
 if __name__=="__main__":
-    app.run(debug=True) #, host='192.168.0.5', port='6000')
+    app.run(debug=True, host='192.168.0.5') #, host='192.168.0.5', port='6000')
  
